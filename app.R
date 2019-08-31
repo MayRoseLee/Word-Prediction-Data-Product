@@ -8,7 +8,7 @@ library(dplyr)
 library(shiny)
 ui <- fluidPage(
   headerPanel("What Will They Say Next?"),
-  textInput(inputId="predictor_words", label = "type in four words(comma separated)",
+  textInput(inputId="predictor_words", label = "type in four words(comma separated)"),
   actionButton ("predictButton","predict"),          
   textOutput(outputId="predicted_word")
 )

@@ -11,7 +11,7 @@ ui <- fluidPage(
   textInput(inputId="predictor_words", label = "type in four words(comma separated)",
   actionButton ("predictButton","predict"),          
   textOutput(outputId="predicted_word")
-))
+)
 
 server <- function(input, output){
   
@@ -20,7 +20,7 @@ server <- function(input, output){
   })
 
   output$predicted_word <- renderText({
-    paste("", whatsnexta(phrase = input$myWords()))
+    paste("", whatsnexta(phrase = myWords()))
   })
   
   
